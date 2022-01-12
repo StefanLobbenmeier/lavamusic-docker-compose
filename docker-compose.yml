@@ -3,11 +3,11 @@ services:
   lavalink:
     image: fredboat/lavalink:master
     volumes:
-      - application.yml:/opt/Lavalink/application.yml
+      - ./application.yml:/opt/Lavalink/application.yml
   lavamusic:
     image: ghcr.io/stefanlobbenmeier/lavamusic:dockerfile
     volumes:
-      - .env:/usr/src/lavalink/.env
+      - ./.env:/usr/src/lavalink/.env
     links:
       - mongo
       - lavalink
