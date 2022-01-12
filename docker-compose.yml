@@ -7,7 +7,7 @@ services:
   lavamusic:
     image: ghcr.io/stefanlobbenmeier/lavamusic:dockerfile
     volumes:
-      - ./.env:/usr/src/lavalink/.env
+      - ./.env:/opt/lavalink/.env
     links:
       - mongo
       - lavalink
