@@ -12,7 +12,7 @@ services:
       - mongo
       - lavalink
   mongo:
-    image: mongo:5
+    build: mongo/
     environment:
       MONGO_INITDB_ROOT_USERNAME: mongoadmin
       MONGO_INITDB_ROOT_PASSWORD: mongopassword
