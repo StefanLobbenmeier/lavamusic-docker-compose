@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   lavalink:
-    build: lavalink/
+    image: ghcr.io/stefanlobbenmeier/lavalink:latest
     volumes:
       - ./application.yml:/opt/Lavalink/application.yml
   lavamusic:
