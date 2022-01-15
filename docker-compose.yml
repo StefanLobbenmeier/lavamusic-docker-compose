@@ -12,7 +12,7 @@ services:
       - mongo
       - lavalink
   mongo:
-    build: mongo/
+    image: webhippie/mongodb:latest
     environment:
       MONGO_INITDB_ROOT_USERNAME: mongoadmin
       MONGO_INITDB_ROOT_PASSWORD: mongopassword
