@@ -5,7 +5,7 @@ services:
     volumes:
       - ./application.yml:/opt/Lavalink/application.yml
   lavamusic:
-    image: ghcr.io/stefanlobbenmeier/lavamusic:dockerfile
+    image: ghcr.io/brblacky/lavamusic:latest
     volumes:
       - ./.env:/opt/lavamusic/.env
     links:
