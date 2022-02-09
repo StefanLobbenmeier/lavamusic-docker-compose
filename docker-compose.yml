@@ -11,6 +11,9 @@ services:
     links:
       - mongo
       - lavalink
+    depends_on:
+      - lavalink
+      - mongo
   mongo:
     image: mongo:5
     environment:
